@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="./app/testApp.js"></script>
+</head>
+<body ng-app="testApp" ng-controller="BodyController">
+    <button ng-click="show()">Show data</button>
+    <ul ng-if="showButtonClicked">
+        <li ng-repeat="dataCell in data"> {{ dataCell }} </li>
+    </ul>
+</body>
+</html>
